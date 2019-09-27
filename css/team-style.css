@@ -1,0 +1,36 @@
+.each-team{
+    background-color: lightgray;
+    width: calc((100% / 4) - 20px);
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    margin-top: 10px;
+    float: left;
+    margin: 10px;
+}
+.team-photo img{
+    height: 60px;
+    margin: 10px;
+}
+.each-team:last-child{
+    margin-bottom: 20px;
+}
+@media(max-width: 1110px){
+    .each-team{
+        float: left;
+        width:  calc((100% / 2) - 20px);
+        margin: auto;
+        margin-top: 20px;
+        margin: 10px;
+    }
+}
+@media(max-width: 755px){
+    .each-team{
+        float: none;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        margin: 10px;
+    }
+}
