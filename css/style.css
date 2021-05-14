@@ -61,7 +61,6 @@ header #branding a:hover{
 }
 #showcase{
     min-height: 276px;
-    background: url(../images/201.png) no-repeat;
     background-size: cover;
     text-align: center;
     color: #2f2f2f;
