@@ -247,7 +247,7 @@ img {
     justify-content: center;
     align-items: center;
     padding: 0.3rem;
-    background: rgba(218, 37, 53, 0.5);
+    background: rgba(37, 94, 218, 0.548);
     border-radius: 0.4rem;
     z-index: var(--z-tooltip);
     transition: 0.4s;
