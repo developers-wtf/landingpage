@@ -1,103 +1,212 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="images\favicon.ico">
 
-<head>
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <meta name="description"
-    content="Developers.wtf evoloved with the aim of bridging the gap between students and professionals. With that in mind we hold monthly meetups and technical sessions by experts from the industry. Come let’s get socialised and delve into the world of learning with the real world developers and professionals. With an idea to bridge the gap between the professionals and new comers. We would love you to join and see how we can make a difference together.">
-  <meta name="keywords" content="developer society, mbccet, about us, Developers.wtf">
-  <!--TO ADD-->
-  <meta name="author" content="MBCCET">
-  <!--TO ADD-->
-  <meta property="og:title" content="Developers.wtf">
-  <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="icons/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-  <link rel="manifest" href="icons/manifest.json">
-  <meta name="msapplication-TileColor" content="#4981ff">
-  <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
-  <meta name="theme-color" content="#4981ff">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link href="css/style.css" type="text/css" rel="stylesheet">
-  <meta charset="UTF-8" />
-  <meta property="og:image" content="http://developers.wtf/logo/DevSoc-Logo_trans.png">
-  <title>Developers.WTF | Home</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
-  <link rel="stylesheet" href="./style.css" />
-</head>
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-<body>
-  <!-- partial:index.partial.html -->
-  <main>
-    <section class="min-vh-100 d-flex bg-primary align-items-center">
-      <div class="container py-5">
-        <div class="
-              row
-              align-items-center
-              justify-content-center justify-content-lg-between
-            ">
-          <div class="col-12 col-sm-9 col-md-8 col-lg-5 mb-5 mb-lg-0">
-            <img class="img-fluid" src="https://i.imgur.com/priepQL.png" alt="boy illustration" />
-          </div>
-          <div class="col-sm-12 col-lg-6">
-            <div class="text-center text-lg-left">
-              <h4 class="mt-4 text-gray">woof!</h4>
-              <h1 class="display-3">
-                We're undergoing a bit of scheduled maintenance
-              </h1>
-              <p class="lead my-4">
-                Sorry for the inconvenience but we&rsquo;re performing some
-                maintenance at the moment.
-              </p>
-              <div class="countdown">
-                <div class="countdown__days">
-                  <div class="number"></div>
-                  <span class>Days</span>
+        <title>Developers.WTF</title>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Developers.WTF</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#our_team" class="nav__link">Our team</a></li>
+                        <li class="nav__item"><a href="#contact_us" class="nav__link">Contact us</a></li>
+
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
                 </div>
 
-                <div class="countdown__hours">
-                  <div class="number"></div>
-                  <span class>Hours</span>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img">
+                        <img src="assets/images/home-.png" alt="">
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Take the big step</h1>
+                        <p class="home__description">Join the community that helps students learn programming for free</p>
+                        <a href="/join" class="button">Join now</a>
+                    </div>   
+                </div>
+            </section>
+
+            <!--========== about ==========-->
+            <section class="about section bd-container" id="about">
+                <div class="about__container bd-grid">
+                    <div class="about__data">
+                        <h2 class="section-title-center">Who we are? <br>Read about us </h2>
+                        <p class="about__description">We are a community of students to help each other learn programming. <br><br> We teach each other through regular meetups.</p>
+                        <a href="https://chat.whatsapp.com/JF7zKFDormzI1tvLVPEsQF" class="button">Get notified about meetups</a>
+                    </div>
+
+                    <div class="about__img">
+                        <img src="assets/images/shared.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--========== our_team ==========-->
+            <section class="our_team section bd-container" id="our_team">
+                <h2 class="section-title">Meet the core committee members <br> Our team</h2>
+                <div class="our_team__container bd-grid">
+                    <div class="our_team__data">
+                        <img src="assets/images/user.png" alt="" class="our_team__img">
+                        <h3 class="our_team__title">Sreeraj P S</h3>
+                        <a href="#" class="button button-link">Logistics</a>
+                    </div>
+
+                    <div class="our_team__data">
+                        <img src="assets/images/user.png" alt="" class="our_team__img">
+                        <h3 class="our_team__title">Ashik Saleem</h3>
+                        <a href="#" class="button button-link">Logistics</a>
+                    </div>
+
+                    <div class="our_team__data">
+                        <img src="assets/images/athul.png" alt="" class="our_team__img">
+                        <h3 class="our_team__title">Athul Baby</h3>
+                        <a href="#" class="button button-link">Online Manager</a>
+                    </div>
+
+                    <div class="our_team__data">
+                        <img src="assets/images/user.png" alt="" class="our_team__img">
+                        <h3 class="our_team__title">Sona John</h3>
+                        <a href="#" class="button button-link">Online Manager</a>
+                    </div>
                 </div>
 
-                <div class="countdown__minutes">
-                  <div class="number"></div>
-                  <span class>Minutes</span>
+                <div class="our_team__container bd-grid">
+                    <div class="our_team__data">
+                        <img src="assets/images/nandana.png" alt="" class="our_team__img">
+                        <h3 class="our_team__title">Nandana Santhosh</h3>
+                        <a href="#" class="button button-link">Outreach team</a>
+                    </div>
+
+                    <div class="our_team__data">
+                        <img src="assets/images/user.png" alt="" class="our_team__img">
+                        <h3 class="our_team__title">Dona Ritto Raju</h3>
+                        <a href="#" class="button button-link">Outreach team</a>
+                    </div>
+
+                    <div class="our_team__data">
+                        <img src="assets/images/user.png" alt="" class="our_team__img">
+                        <h3 class="our_team__title">Paul Shaise</h3>
+                        <a href="#" class="button button-link">Topic Selection</a>
+                    </div>
+                    
+                    <div class="our_team__data">
+                        <img src="assets/images/user.png" alt="" class="our_team__img">
+                        <h3 class="our_team__title">Sonia Rachel Thomas</h3>
+                        <a href="#" class="button button-link">Topic Selection</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--========== ACCESSORIES ==========-->
+            <section class="contact_us section bd-container" id="contact_us">
+                <h2 class="section-title">Contact us</h2>
+
+                <div class="contact_us__container bd-grid">
+                    <div class="contact_us__content">
+                        <h3 class="contact_us__title">Email</h3>
+                        <span class="contact_us__category">developers.wtf@gmail.com</span>
+                        <a href="mailto:developers.wtf@gmail.com" class="button contact_us__button"><i class='bx bx-mail'></i></a>
+                    </div>
                 </div>
 
-                <div class="countdown__seconds">
-                  <div class="number"></div>
-                  <span class>Seconds</span>
-                </div>
-              </div>
-              <p class="d-flex flex-row mt-5 my-0 lead">Meanwhile</p><br>
-              <div class="d-flex flex-row mt-0">
-                <a href="survey/index.html"><button class="btn btn-primary rounded-right">Take the Dev
-                    Survey</button></a>
-                <a href="join/index.html"><button type="submit" class="btn btn-primary rounded-right ml-3">Join
-                    the Community</button></a>
-              </div>
+            </section>
 
+            <!--========== SEND GIFT ==========-->
+            <section class="send section">
+                <div class="send__container bd-container bd-grid">
+                    <div class="send__content">
+                        <h2 class="section-title-center send__title">Join our newsletter</h2>
+                        <p class="send__description">Start receiving our newsletters. We occationaly send newsletters about latest programming trends. We don't spam. </p>
+                        <form action="">
+                            <div class="send__direction">
+                                <input type="text" placeholder="Email address" class="send__input">
+                                <a href="#" class="button">Subscribe</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="send__img">
+                        <img src="assets/images/newsletter.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Developers.WTF</a>
+                    </h3>
+                    <p class="footer__description">Join the community <br> and get benefited</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Sections</h3>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home </a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#our_team" class="footer__link">Our team</a></li>
+                        <li><a href="#contact_us" class="footer__link">Contact us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Presence</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Medium</a></li>
+                        <li><a href="#" class="footer__link">YouTube</a></li>
+                        <li><a href="#" class="footer__link">Telegram</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle '></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter'></i></a>
+                    <a href="https://www.instagram.com/developers.wtf" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- partial -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="./script.js"></script>
-</body>
 
+            <p class="footer__copy">With love Developers.WTF</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
