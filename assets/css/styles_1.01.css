@@ -3,16 +3,18 @@
 
 /*===== VARIABLES CSS =====*/
 :root {
-    --header-height: 3rem;
+    --header-height: 3.6rem;
 
     /*========== Colors ==========*/
     --first-color: #257ada;
     --first-color-alt: #213fc4;
     --first-color-send: #3b95de;
     --title-color: #161212;
+    --light-1: #3f51b5;
+    --light-2: #062a46;
     --text-color: #5b5757;
     --text-color-light: #8f8a8a;
-    --body-color: #fefbfb;
+    --body-color: #fff;
     --container-color: #fff;
 
     /*========== Font and typography ==========*/
@@ -63,11 +65,13 @@ html {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-    --first-color-send: #161212;
+    --first-color-send: #3d3d3d;
     --title-color: #f3f1f1;
     --text-color: #d1c7c8;
-    --body-color: #1d1f25;
-    --container-color: #302728;
+    --body-color: #2e2f33;
+    --container-color: #3d3d3d;
+    --light-1: #fff;
+    --light-2: #fff;
 }
 
 /*========== Button Dark/Light ==========*/
@@ -138,7 +142,7 @@ img {
 }
 
 .bd-container {
-    max-width: 968px;
+    max-width: 1000px;
     width: calc(100% - 3rem);
     margin-left: var(--mb-3);
     margin-right: var(--mb-3);
@@ -155,7 +159,7 @@ img {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color);
+    background-color: var(--container-color);
 }
 
 /*========== NAV ==========*/
@@ -176,9 +180,9 @@ img {
         margin: 0 auto;
         padding: 2.5rem 0 0;
         text-align: center;
-        background-color: var(--body-color);
+        background-color: var(--container-color);
         transition: 0.4s;
-        box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 23%);
         border-radius: 2rem;
         z-index: var(--z-fixed);
     }
@@ -197,10 +201,6 @@ img {
 
 .nav__logo:hover {
     color: var(--first-color);
-}
-
-.nav__link {
-    transition: 0.3s;
 }
 
 .nav__link:hover {
@@ -235,7 +235,7 @@ img {
 
 /* Change background header */
 .scroll-header {
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Scroll top */
@@ -260,7 +260,7 @@ img {
 
 .scrolltop__icon {
     font-size: 1.5rem;
-    color: var(--body-color);
+    color:#fff;
 }
 
 .show-scroll {
@@ -271,6 +271,7 @@ img {
 /*========== HOME ==========*/
 .home__container {
     row-gap: 0.5rem;
+    margin-top:15px;
 }
 
 .home__img {
@@ -279,9 +280,15 @@ img {
 }
 
 .home__title {
+    color:#000;
     font-size: var(--biggest-font-size);
     font-weight: var(--font-bold);
     margin-bottom: var(--mb-2);
+    /* background: linear-gradient(to top left, #3f51b5, #062a46); */
+    background: linear-gradient(to top left, var(--light-1), var(--light-2));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .home__description {
@@ -348,6 +355,7 @@ img {
 
 .our_team__img {
     width: 180px;
+    border-radius: 50%;
 }
 
 .our_team__title {
@@ -356,10 +364,6 @@ img {
 }
 
 /*========== ACCESSORIES ==========*/
-.contact_us__container {
-    grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 2rem;
-}
 
 .contact_us__content {
     position: relative;
@@ -368,6 +372,10 @@ img {
     background-color: var(--container-color);
     box-shadow: 0 2px 6px rgba(65, 11, 16, 0.15);
     border-radius: 1rem;
+    max-width: 300px;
+    margin: 0 auto;
+    cursor:pointer;
+    overflow: hidden;
 }
 
 .contact_us__content:hover {
@@ -437,6 +445,7 @@ img {
     width: 70%;
     outline: none;
     border: none;
+    padding-left:15px;
     font-size: var(--normal-font-size);
     font-family: var(--body-font);
 }
@@ -476,6 +485,7 @@ img {
 
 .footer__link:hover {
     color: var(--first-color);
+    text-decoration: underline;
 }
 
 .footer__social {
@@ -549,7 +559,7 @@ img {
     }
 
     .nav {
-        height: calc(var(--header-height) + 1.5rem);
+        height: calc(var(--header-height) + 1.2rem);
     }
 
     .nav__list {
@@ -577,29 +587,6 @@ img {
 
     .about__container {
         padding: 0 2rem;
-    }
-
-    .contact_us__container {
-        grid-template-columns: repeat(3, 224px);
-        justify-content: center;
-    }
-
-    .contact_us__content {
-        padding: 0.5rem 1.5rem 1.5rem;
-    }
-
-    .contact_us__img {
-        width: 120px;
-        margin-bottom: var(--mb-1);
-    }
-
-    .contact_us__title,
-    .contact_us__category {
-        text-align: initial;
-    }
-
-    .contact_us__button {
-        padding: 0.75rem;
     }
 
     .send {

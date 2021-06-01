@@ -89,11 +89,14 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
 
+function mail(){
+    window.open("https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=developers.wtf@gmail.com");
+}
 /*==================== SCROLL REVEAL ANIMATION ====================*/
 const sr = ScrollReveal({
     distance: '30px',
-    duration: 1800,
-    reset: true,
+    duration: 1200,
+    reset: false,
 });
 
 sr.reveal(`.home__data, .home__img, 
@@ -101,7 +104,6 @@ sr.reveal(`.home__data, .home__img,
            .contact_us__content,
            .footer__content`, {
     origin: 'top',
-    interval: 200,
 })
 
 sr.reveal(`.about__img, .send__content`, {
