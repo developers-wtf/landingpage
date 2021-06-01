@@ -359,7 +359,7 @@ img {
 }
 
 .our_team__title {
-    font-size: var(--h3-font-size);
+    font-size: 15px;
     margin-bottom: var(--mb-1);
 }
 
@@ -368,7 +368,7 @@ img {
 .contact_us__content {
     position: relative;
     display: grid;
-    padding: 0.25rem 0.75rem 0.75rem;
+    padding: 20px;
     background-color: var(--container-color);
     box-shadow: 0 2px 6px rgba(65, 11, 16, 0.15);
     border-radius: 1rem;
@@ -394,11 +394,11 @@ img {
 }
 
 .contact_us__title {
-    font-size: var(--normal-font-size);
+    font-size:17px !important;
 }
 
 .contact_us__category {
-    font-size: var(--small-font-size);
+    font-size: 13px;
     margin-bottom: var(--mb-1);
     color: var(--text-color-light);
 }
@@ -474,9 +474,11 @@ img {
 
 .footer__logo,
 .footer__title {
-    font-size: var(--h3-font-size);
+    font-size: 18px !important;
 }
-
+.footer__description{
+    font-size: 15px !important;
+}
 .footer__link {
     display: inline-block;
     margin-bottom: 0.75rem;
@@ -500,7 +502,7 @@ img {
 
 .footer__copy {
     text-align: center;
-    font-size: var(--small-font-size);
+    font-size: 13px !important;
     color: var(--text-color-light);
     margin-top: 4rem;
 }
